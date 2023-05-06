@@ -2,7 +2,7 @@ package hw3_;
 
 public class ClassRoom extends Room 
 {
-	private int numOfRows;
+	protected int numOfRows;
 	public ClassRoom(int numOfSeats, int basePrice , int numOfRows)
 	{
 		super(numOfSeats, basePrice);

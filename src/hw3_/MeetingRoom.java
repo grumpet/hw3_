@@ -22,7 +22,7 @@ public class MeetingRoom extends Room
 	        System.out.print("meeting room:\n");
 	        super.print();
 	        System.out.print("is project = " + isProject+"\n");
-	        System.out.println();
+	       
 
 	    }
 

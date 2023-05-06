@@ -2,9 +2,9 @@ package hw3_;
 
 public class Employee 
 {
-	private String name;
-	private int seniority;
-	private int hourlyRate;
+	protected  String name;
+	protected  int seniority;
+	protected  int hourlyRate;
 	
 	public Employee(String name,int seniority,int hourlyRate)
 	{
@@ -52,6 +52,22 @@ public class Employee
 		{
 			this.hourlyRate=hourlyRate;
 		}
+	}
+	
+	public double monthlyPayment(int hours)
+	{
+		double temp=1;
+		if(seniority>=10)
+		{
+			temp=1.1;
+		}
+		else if(seniority>=20)
+		{
+			temp=1.2;
+		}
+		
+		return hourlyRate*hours*temp;
+		
 	}
 	
 

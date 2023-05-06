@@ -2,8 +2,8 @@ package hw3_;
 
 public class Room 
 {
-	 private int numOfSeats;
-	    private int basePrice;
+	protected  int numOfSeats;
+	protected  int basePrice;
 
 	    public Room(int numOfSeats, int basePrice) {
 	        this.numOfSeats = numOfSeats;
