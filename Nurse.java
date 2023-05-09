@@ -21,13 +21,22 @@ public class Nurse extends Employee
 	
 	public double monthlyPayment(int hours)
 	{
+		double temp=1;
+		if(seniority>=10)
+		{
+			temp=1.1;
+		}
+		else if(seniority>=20)
+		{
+			temp=1.2;
+		}
 		if(type=="advanced")
 		{
-			return 1.2*(hourlyRate*hours)+150;
+			return temp*1.2*hourlyRate*hours+150;
 		}
 		else
 		{
-			return 1.2*hourlyRate*hours;
+			return temp*1.2*hourlyRate*hours;
 		}
 		
 	}
