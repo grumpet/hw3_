@@ -20,7 +20,7 @@ public class Staff
 		double total=0;
 		for(int i=0;i<staffList.size();i++)
 		{
-			System.out.print("Employee "+staffList.get(i).getName()+" please enter amount of hours: ");
+			System.out.print("Employee: "+staffList.get(i).getName()+" please enter amount of hours: ");
 			total+=staffList.get(i).monthlyPayment(scanner.nextInt());
 		}
 		System.out.println("total payment: "+total);

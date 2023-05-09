@@ -2,7 +2,7 @@ package hw3_;
 
 public class MeetingRoom extends Room 
 {
-	 private boolean isProject;
+	 protected boolean isProject;
 
 	    public MeetingRoom(int numOfSeats, int basePrice, boolean isProject) {
 	        super(numOfSeats, basePrice);
