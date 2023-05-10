@@ -23,7 +23,6 @@ public class Supervisor extends Doctor
 	
 	public double monthlyPayment(int hours)
 	{
-		//check again
 		return ((1+teamArr.length*0.02)*hours*hourlyRate)*2;
 	}
 	

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Staff
 {
     Scanner scanner = new Scanner(System.in);
-    protected ArrayList<Employee> staffList;
+    private ArrayList<Employee> staffList;
 	public Staff(ArrayList<Employee> staffList) 
 	{
 		this.staffList=staffList;

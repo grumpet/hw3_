@@ -7,14 +7,14 @@ public class MainTask1
 		int time=0;
 		
 
-		if(room instanceof MeetingRoom)
+		if(room.getClass() == MeetingRoom.class)
 		{
 			if(((MeetingRoom) room).getIsProject())
 			{
 				time+=10;
 			}
 		}
-		else if(room instanceof ClassRoom)
+		else if(room.getClass() == ClassRoom.class)
 		{
 			time+=((ClassRoom) room).getNumOfRows()*3;
 		}
