@@ -1,8 +1,10 @@
+//Nimrod Katzenell 206776734
+//Gonen Matis 318651411
 package hw3_;
 
 public class Nurse extends Employee 
 {
-	protected String type;
+	private String type;
 	public Nurse(String name, int seniority, int hourlyRate , String type) 
 	{
 		super(name, seniority, hourlyRate);
@@ -18,18 +20,10 @@ public class Nurse extends Employee
 	{
 		this.type=type;
 	}
-	
+	@Override
 	public double monthlyPayment(int hours)
 	{
 		double temp=1;
-		if(seniority>=10)
-		{
-			temp=1.1;
-		}
-		else if(seniority>=20)
-		{
-			temp=1.2;
-		}
 		if(type=="advanced")
 		{
 			return temp*1.2*hourlyRate*hours+150;

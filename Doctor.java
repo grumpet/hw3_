@@ -1,3 +1,5 @@
+//Nimrod Katzenell 206776734
+//Gonen Matis 318651411
 package hw3_;
 
 public class Doctor extends Employee 
@@ -18,6 +20,7 @@ public class Doctor extends Employee
 	{
 		this.residency=residency;
 	}
+	@Override
 	public double monthlyPayment(int hours)
 	{
 		return hourlyRate*hours*2;

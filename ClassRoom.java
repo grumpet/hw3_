@@ -1,3 +1,5 @@
+//Nimrod Katzenell 206776734
+//Gonen Matis 318651411
 package hw3_;
 
 public class ClassRoom extends Room 
@@ -6,7 +8,7 @@ public class ClassRoom extends Room
 	public ClassRoom(int numOfSeats, int basePrice , int numOfRows)
 	{
 		super(numOfSeats, basePrice);
-		this.numOfRows=numOfRows;
+		setNumOfRows(numOfRows);
 	}
 	 public int getNumOfRows()
 	 {
@@ -28,7 +30,7 @@ public class ClassRoom extends Room
 	    @Override
 	    public void print()
 	    {
-	    	  System.out.print("class room:\n");
+	    	  System.out.print("Class room:\n");
 		      super.print();
 		      System.out.print("num rows: "+numOfRows +"\n");
 	    }

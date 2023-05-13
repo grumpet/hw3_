@@ -1,3 +1,5 @@
+//Nimrod Katzenell 206776734
+//Gonen Matis 318651411
 package hw3_;
 
 public class MainTask1 
@@ -27,18 +29,18 @@ public class MainTask1
 	{
 		
 		
-		MeetingRoom meetingroom1=new MeetingRoom(4 , 50 , false );
-		MeetingRoom meetingroom2=new MeetingRoom(3 , 50 , false );
-		MeetingRoom meetingroom3=new MeetingRoom(10 , 100 , true );
-		ClassRoom classroom1 = new ClassRoom(24 , 250 ,4);
-		meetingroom1.print();
-		System.out.println("cleaning time "+clean(meetingroom1)+" minutes \n");
-		meetingroom2.print();
-		System.out.println("cleaning time " +clean(meetingroom2)+" minutes \n");
-		meetingroom3.print();
-		System.out.println("cleaning time " + clean(meetingroom3)+" minutes \n");
-		classroom1.print();
-		System.out.println("cleaning time " + clean(classroom1)+" minutes \n");
+		Room room1=new Room(4 , 50);
+		Room room2=new Room(3 , 50);
+		MeetingRoom meetingRoom1=new MeetingRoom(10 , 100 , true );
+		ClassRoom classRoom1 = new ClassRoom(24 , 250 ,4);
+		room1.print();
+		System.out.println("Cleaning time "+clean(room1)+" minutes \n");
+		room2.print();
+		System.out.println("Cleaning time " +clean(room2)+" minutes \n");
+		meetingRoom1.print();
+		System.out.println("Cleaning time " + clean(meetingRoom1)+" minutes \n");
+		classRoom1.print();
+		System.out.println("Cleaning time " + clean(classRoom1)+" minutes \n");
 		
 	
 	

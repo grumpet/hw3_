@@ -19,7 +19,7 @@ public class MeetingRoom extends Room
 
 	    @Override
 	    public void print() {
-	        System.out.print("meeting room:\n");
+	        System.out.print("Meeting room:\n");
 	        super.print();
 	        System.out.print("is project = " + isProject+"\n");
 	       

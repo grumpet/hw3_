@@ -1,3 +1,5 @@
+//Nimrod Katzenell 206776734
+//Gonen Matis 318651411
 package hw3_;
 
 public class Room 
@@ -6,8 +8,8 @@ public class Room
 	protected  int basePrice;
 
 	    public Room(int numOfSeats, int basePrice) {
-	        this.numOfSeats = numOfSeats;
-	        this.basePrice = basePrice;
+	    	setNumOfSeats(numOfSeats);
+	    	setBasePrice(basePrice);
 	    }
 
 	    public int getNumSeats() {
@@ -28,7 +30,15 @@ public class Room
 	    }
 
 	    public void setBasePrice(int basePrice) {
-	        this.basePrice = basePrice;
+	    	if(basePrice<0)
+	    	{
+	    		this.basePrice=0;
+	    	}
+	    	else
+	    	{
+	    		this.basePrice = basePrice;
+	    	}
+	        
 	    }
 
 	    public void print() {
